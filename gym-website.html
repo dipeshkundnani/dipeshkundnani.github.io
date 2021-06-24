@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Daily Fitness Club</title>
+    <link rel="stylesheet" href="LocalGym.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet"/>
+    
+    <!-- This is made by Dipesh Kundnani -->
+    <!-- This is a sample landing webpage --> 
+    <!-- this website is build when i learn basic few css without using float,flexbox or grid -->
+    
+    <style>
+  *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Ubuntu', sans-serif;
+  }
+  body {
+    background: linear-gradient(rgba(0,0,0,0.7),rgba(83, 58, 58, 0.2)),url(../Images/gym-bg.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    color: white;
+    font-family: "Ubuntu", sans-serif;
+  }
+  .logo {
+    /* border: 2px solid green; */
+    padding: 0px;
+    margin: 0px;
+    display: inline-block;
+    position: absolute;
+    top: 7px;
+    left: 15px;
+    text-align: center;
+    line-height: 18px;
+  }
+  .logo img {
+    width: 80px;
+    height: 50px;
+    filter: invert(100%);
+  }
+  .logo p {
+    font-size: 18px;
+    /* margin: -3px; */
+    color: rgb(226, 226, 226);
+    text-transform: capitalize;
+    font-family: "Ubuntu", sans-serif;
+  }
+  .nav {
+    /* border: 2px solid green; */
+    padding: 0px;
+    display: block;
+    width: 420px;
+    margin: 10px auto;
+    margin-bottom: 30px;
+  }
+  .navbar {
+    width: 450px;
+    margin: 12px 0px;
+  }
+  .userdata {
+    /* border: 2px solid green; */
+    padding: 0px 5px;
+    margin: 2px;
+    display: inline-block;
+    position: absolute;
+    top: 10px;
+    right: 15px;
+  }
+
+  .navbar li {
+    display: inline-block;
+    padding: 5px 15px;
+  }
+  .navbar li a {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+  }
+  .navbar li a:hover,
+  .navbar li a.active {
+    text-decoration: underline;
+    color: gray;
+  }
+  .btn {
+    padding: 3px 7px;
+    font-size: 20px;
+    background-color: transparent;
+    margin-right: 5px;
+    border: 2px solid white;
+    border-radius: 10px;
+    font-family: "Ubuntu", sans-serif;
+    font-weight: bold;
+    color: white;
+  }
+  .btn:hover {
+    /* background-color: grey; */
+    color: grey;
+    border-color: grey;
+    cursor: pointer;
+  }
+
+  .container {
+    border: 2px solid white;
+    position: relative;
+    top: 50px;
+    left: 120px;
+    margin: 10px;
+    padding: 10px;
+    width: 25%;
+    border-radius: 10px;
+  }
+  .container h2 {
+    text-align: center;
+    margin: 17px 10px;
+    font-size: 35px;
+  }
+  .container input {
+    padding: 5px 10px;
+    width: 250px;
+    font-size: 16px;
+    border-radius: 7px;
+    border: none;
+    display: block;
+    margin: 20px auto;
+  }
+  .container #submit {
+    padding: 5px 25px;
+    display: block;
+    margin: 10px auto;
+    border-radius: 7px;
+    font-size: 17px;
+    border: 1px solid white;
+    cursor: pointer;
+  }
+  .quote {
+    position: absolute;
+    top: 300px;
+    right: 120px;
+    text-shadow: 10px 10px 8px #000;
+  }
+
+    </style>
+  </head>
+  <body>
+    <div class="header">
+      <div class="logo">
+        <img src="../Images/gym-logo.png" alt="Gym Logo" />
+        <p>Fitness Club</p>
+      </div>
+      <div class="nav">
+        <ul class="navbar">
+          <li><a href="#" class="active">Home</a></li>
+          <li><a href="#">Fitness Gallery</a></li>
+          <li><a href="#">Contact</a></li>
+          <li><a href="#">About</a></li>
+        </ul>
+      </div>
+      <div class="userdata">
+        <button class="btn">Log In</button>
+        <button class="btn">Register</button>
+      </div>
+    </div>
+      <div class="container">
+        <h2>Join Today</h2>
+        <form action="noaction.php" id="form">
+          <input
+            type="text"
+            name="fname"
+            id="fname"
+            placeholder="Enter First Name"
+            required
+          />
+          <input
+            type="text"
+            name="lname"
+            id="lname"
+            placeholder="Enter Last Name"
+            required
+          />
+          <input
+            type="number"
+            name="age"
+            id="age"
+            placeholder=" Enter Your Age"
+            required
+          />
+          <input
+            type="text"
+            name="sex"
+            id="sex"
+            placeholder="Enter Your Gender"
+            required
+          />
+          <input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="Enter Your Email Address"
+            required
+          />
+          <input
+            type="password"
+            name="password"
+            id="password"
+            placeholder="Enter Your Passworrd"
+            required
+          />
+          <!-- <input type="password" name="password" id="password" placeholder="Confirm Your Passworrd"> -->
+          <button type="submit" id="submit">Register</button>
+        </form>
+      </div>
+      <div class="quote">
+        <h2>
+          “Getting fit is all about mind over matter. I don't mind,<br />
+          so it doesn't matter.”
+        </h2>
+      </div>
+  </body>
+</html>
