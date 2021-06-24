@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fitness Club With Flex</title>
+    <link rel="stylesheet" href="LocalGymWithFlex.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+        
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="head">
+            <div class="logo">
+                <img src="../Images/gym-logo.png" alt="Gym Logo">
+                <p>Fitness Club</p>
+            </div>
+            <div class="nav">
+                <ul class="navbar">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Fitness Gallery</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">About</a></li>
+                </ul>
+            </div>
+            <div class="userdata">
+                <button class="btn">Log In</button>
+                <button class="btn">Register</button>
+            </div>
+        </div>
+        <div class="main">
+            <div class="container">
+                <h2>Join Today</h2>
+            <form action="noaction.php" id="form">
+                <input
+                    type="text"
+                    name="fname"
+                    id="fname"
+                    placeholder="Enter First Name"
+                    required
+                    />
+                <input
+                type="text"
+                name="lname"
+                id="lname"
+                    placeholder="Enter Last Name"
+                    required
+                    />
+                <input
+                type="number"
+                    name="age"
+                    id="age"
+                    placeholder=" Enter Your Age"
+                    required
+                    />
+                <input
+                type="text"
+                name="sex"
+                id="sex"
+                    placeholder="Enter Your Gender"
+                    required
+                />
+                <input
+                type="email"
+                name="email"
+                id="email"
+                placeholder="Enter Your Email Address"
+                required
+                />
+                <input
+                type="password"
+                name="password"
+                id="password"
+                placeholder="Enter Your Passworrd"
+                required
+                />
+                <!-- <input type="password" name="password" id="password" placeholder="Confirm Your Passworrd"> -->
+                <button type="submit" id="submit">Register</button>
+            </form>
+        </div>
+        <div class="quote">
+            <h2>“Getting fit is all about mind over matter. I don't mind,<br />
+                so it doesn't matter.”</h2>
+        </div>
+        </div>
+    </div>
+</body>
+</html>
