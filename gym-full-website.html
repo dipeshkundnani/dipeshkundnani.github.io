@@ -1,0 +1,585 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Fitness Club With Flex</title>
+  <link rel="stylesheet" href="LocalGymWithFlex.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet" />
+  <style>
+  * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Ubuntu", sans-serif;
+  }
+  body {
+  color: white;
+  font-family: "Ubuntu", sans-serif;
+  }
+  #home {
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(83, 58, 58, 0.2)),
+    url(../Images/gym-bg.jpg);
+  /* background: linear-gradient(rgba(0,0,0,0.7),rgba(83, 58, 58, 0.2)),url(https://github.com/dipeshkundnani/folder/blob/main/assets/images/gym-bg.jpg?raw=true); */
+  background-color: black;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+#header {
+  height: 100vh;
+}
+.head {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 15px;
+  /* position: sticky; */
+}
+.logo {
+  margin-left: 15px;
+  margin-top: -8px;
+  text-align: center;
+}
+.logo a{
+  text-decoration: none;
+  color: white;
+}
+.logo img {
+  width: 80px;
+  height: 50px;
+  filter: invert(100%);
+}
+.logo p {
+  font-size: 18px;
+  /* margin: -3px; */
+  color: rgb(226, 226, 226);
+  text-transform: capitalize;
+  font-family: "Ubuntu", sans-serif;
+}
+.navbar {
+  display: flex;
+  margin-top: 8px;
+}
+.navbar li {
+  padding: 5px 15px;
+  list-style: none;
+}
+.navbar li a {
+  color: white;
+  text-decoration: none;
+  font-size: 20px;
+}
+.navbar li a:hover,
+.navbar li a.active {
+  text-decoration: underline;
+  color: rgb(32, 100, 116);
+}
+.userdata {
+  margin-right: 10px;
+  margin-top: 10px;
+}
+.btn {
+  padding: 3px 7px;
+  font-size: 20px;
+  background-color: transparent;
+  margin-right: 5px;
+  border: 2px solid white;
+  border-radius: 10px;
+  font-family: "Ubuntu", sans-serif;
+  font-weight: bold;
+  color: white;
+}
+.btn:hover {
+  /* background-color: grey; */
+  color: rgb(32, 100, 116);
+  border-color: rgb(32, 100, 116);
+  cursor: pointer;
+}
+#main {
+  width: 100%;
+  /* height: 520px; */
+  margin: 10px 0px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.main-container {
+  border: 2px solid white;
+  margin-top: 40px;
+  margin-right: 50px;
+  padding: 10px;
+  width: 25%;
+  border-radius: 10px;
+}
+.main-container h2 {
+  text-align: center;
+  margin: 17px 10px;
+  font-size: 35px;
+}
+.main-container #form {
+  display: flex;
+  flex-direction: column;
+}
+.main-container input {
+  padding: 5px 10px;
+  width: 250px;
+  font-size: 16px;
+  border-radius: 7px;
+  border: none;
+  margin: 10px auto;
+}
+.main-container #register {
+  padding: 5px 25px;
+  margin: 10px auto;
+  border-radius: 7px;
+  font-size: 17px;
+  border: 1px solid white;
+  cursor: pointer;
+}
+#register:hover{
+  background-color: rgb(109, 108, 108);
+}
+.quote {
+  text-shadow: 10px 10px 8px #000;
+}
+#gallery {
+  margin: 10px; 
+  padding: 10px;
+  color: black;
+}
+.gallery-head {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+.gallery-head h1{
+  margin: 15px 5px;
+}
+.gallery-head p{
+  width: 70%;
+  text-align: center;
+  margin-bottom: 10px;
+}
+.img-slides {
+  border-top: 2px solid grey;
+  border-bottom: 2px solid grey;
+  margin: 20px 5px;
+  padding: 20px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.box {
+  border: 2px solid gray;
+  height: 425px;
+  width: 310px;
+  border-radius: 15px;
+  padding: 10px;
+  margin: 30px 0px ;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  box-shadow: 2px 2px 10px 2px rgb(158, 158, 158);
+}
+.box img{
+  height: 180px;
+  width: 190px;
+  border-radius: 50%;
+}
+.box hr{
+  width: 100px;
+  color: grey;
+  border-width: 2px;
+}
+.box p{
+  margin: 0px 20px;
+}
+#aboutus {
+  padding: 20px 10px;
+  margin: 10px;
+  color: black;
+  border-bottom: 2px solid grey;
+}
+#aboutus h1{
+  text-align: center;
+  font-size: 40px;
+  margin-top: -20px;
+  margin-bottom: 20px;
+}
+.about-box {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+.ab-left {
+  width: 40%;
+}
+.about-logo {
+  padding: 20px;
+  margin: 10px auto;
+  margin-top: 10px;
+  text-align: center;
+}
+.about-logo img {
+  width: 230px;
+  height: 210px;
+  border-radius: 50%;
+  margin-bottom: 20px;
+}
+.about-logo p {
+  font-size: 38px;
+  color: black;
+  text-transform: capitalize;
+  font-family: "Ubuntu", sans-serif;
+}
+.ab-right {
+  width: 65%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.ab-right p{
+  padding: 10px 50px;
+}
+#contactus {
+  color: black;
+  /* border-bottom: 2px solid grey; */
+  margin: 30px 10px;
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.cleft {
+  /* border: 2px solid black; */
+  margin: 5px;
+  text-align: center;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.cleft hr{
+  width: 50%;
+  height: 2px;
+  color: rgb(109, 108, 108);
+  margin: 10px auto;
+}
+.c-title {
+  /* border: 2px solid black; */
+  padding: 10px;
+  margin: 5px;
+}
+.c-title h2 {
+  margin: 10px;
+}
+.c-title:nth-child(1) p{
+  padding: 0px 70px; 
+}
+#social-links {
+  /* border: 2px solid black; */
+  margin: 5px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+#social-links img{
+  height: 30px;
+  margin: 0px 20px;
+  width: 30px;
+}
+.cright {
+  /* border: 2px solid black; */
+  margin: 5px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.cright h1{
+  margin: 20px 0px;
+}
+#messageus {
+  /* border: 2px solid black; */
+  margin: 10px;
+  padding: 10px 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+#messageus input,textarea{
+  margin: 10px;
+  padding: 7px 5px;
+  width: 400px;
+  font-size: 18px;
+  border-radius: 5px;
+  border-width: 1px;
+}
+#messageus #submit-btn {
+  margin: 10px;
+  padding: 7px 5px;
+  border-radius: 5px;
+  border-width: 1px;
+  font-size: 18px;
+  cursor: pointer;
+}
+#messageus #submit-btn:hover{
+  background-color: rgb(194, 194, 194);
+}
+#footer-nav {
+  border: 2px solid black;
+  margin: 5px;
+  height: 500px;
+  background-color: rgb(22, 54, 61);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+#backtop-btn{
+  width: 100%;
+  height: 60px;
+  font-size: 16px;
+  background-color: rgb(25, 78, 90);
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+#backtop-btn:hover{
+  background-color: rgb(32, 100, 116);
+}
+.foot-box {
+  /* border: 2px solid black; */
+  padding: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.fbox {
+  /* border: 2px solid black; */
+  margin: 5px;
+  padding: 20px 0px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  width: 25%;
+}
+.fbox h3{
+  margin: 10px;
+  font-size: 22px;
+}
+.fbox li{
+  list-style: none;
+  margin: 3px 0px;
+
+}
+.fbox li a{
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+}
+.fbox li a:hover{
+  color: black;
+}
+#other-tools{
+  height: 120px;
+  /* border: 2px solid black; */
+  text-align: center;
+  line-height: 120px;
+}
+#copyright {
+  margin: 10px;
+  padding: 10px;
+  text-align: center;
+  font-size: 18px;
+}
+
+  </style>
+</head>
+
+<body>
+    <!--home  -->
+    <div id="home">
+    <!-- header -->
+    <div id="header">
+
+      <div class="head">
+        <div class="logo">
+          <a href="#home">
+          <img src="../Images/gym-logo.png" alt="Gym Logo" />
+          <p>Fitness Club</p>
+        </a>
+        </div>
+        <div class="nav">
+          <ul class="navbar">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#gallery">Fitness Gallery</a></li>
+            <li><a href="#aboutus">About</a></li>
+            <li><a href="#contactus">Contact</a></li>
+          </ul>
+        </div>
+        <div class="userdata">
+          <button class="btn">Log In</button>
+          <button class="btn">Register</button>
+        </div>
+      </div>
+
+      <div id="main">
+        <div class="main-container">
+          <h2>Join Today</h2>
+          <form action="noaction.php" id="form">
+            <input type="text" name="fname" id="fname" placeholder="Enter First Name" required />
+            <input type="text" name="lname" id="lname" placeholder="Enter Last Name" required />
+            <input type="number" name="age" id="age" placeholder=" Enter Your Age" required />
+            <input type="text" name="sex" id="sex" placeholder="Enter Your Gender" required />
+            <input type="email" name="email" id="email" placeholder="Enter Your Email Address" required />
+            <input type="password" name="password" id="password" placeholder="Enter Your Passworrd" required />
+            <!-- <input type="password" name="password" id="password" placeholder="Confirm Your Passworrd"> -->
+            <button type="submit" id="register">Register</button>
+          </form>
+        </div>
+        <div class="quote">
+          <h2>
+            “Getting fit is all about mind over matter. I don't mind,<br />
+            so it doesn't matter.”
+          </h2>
+        </div>
+      
+      
+      </div>
+
+    </div>
+    </div>
+    <!-- gallery -->
+    <div id="gallery">
+    <div class="gallery-head">
+      <h1>Client Reviews</h1>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque ullam, ipsam beatae dolorum placeat magni
+        sapiente soluta mollitia suscipit vitae laudantium nostrum nemo exercitationem dolores non voluptatibus
+        laboriosam cum. Magnam.</p>
+    </div>
+    <div class="img-slides">
+      <div class="box" id="box1">
+        <img src="../Images/client-img1.jpg" alt="user">
+        <hr>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse eum aperiam voluptates nam earum animi est
+          rerum eos vero laborum?</p>
+        <p class="cl-name">- Tony Stark</p>
+      </div>
+      <div class="box" id="box2">
+        <img src="../Images/client-img2.jpg" alt="user">
+        <hr>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse eum aperiam voluptates nam earum animi est
+          rerum eos vero laborum?</p>
+        <p class="cl-name">- Steve Rogers</p>
+      </div>
+      <div class="box" id="box3">
+        <img src="../Images/client-img3.jpg" alt="user">
+        <hr>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse eum aperiam voluptates nam earum animi est
+          rerum eos vero laborum?</p>
+        <p class="cl-name">- Wanda Maximoff</p>
+      </div>
+    </div>
+    </div>
+    <!-- about -->
+    <div id="aboutus">
+      <div class="about-box">
+        <div class="ab-left">
+          <div class="about-logo">
+            <img src="../Images/about-logo.jpg" alt="Gym Logo" />
+            <p>Fitness Club</p>
+          </div>        
+        </div>
+        <div class="ab-right">
+          <h1>About us</h1>
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quasi ratione, quidem inventore sit repudiandae voluptate maxime, necessitatibus illo quia sequi hic incidunt. Similique maiores eligendi, iste voluptatum non repudiandae ea labore vel voluptates nobis nam provident suscipit recusandae? Dignissimos, consequuntur, provident unde enim modi expedita, adipisci exercitationem aliquid aut eligendi nisi? Earum vel, totam delectus amet deserunt quibusdam incidunt voluptatem tempora, neque impedit tempore, reprehenderit nobis cumque velit perferendis! Beatae molestias aspernatur consequatur enim, amet aperiam corporis, sunt, blanditiis eaque itaque omnis cumque fugiat optio. Quis eaque iure ipsum, obcaecati perferendis assumenda quasi debitis reprehenderit ad numquam? Iure, atque voluptate?</p>
+          <h4>- CEO Micheal, Fitness Club </h4>
+        </div>
+      </div>
+    </div>
+    <!-- contact -->
+    <div id="contactus">
+      <div class="cleft">
+        <div class="c-title">
+          <h2>Address</h2>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Et voluptatum, numquam repudiandae repellendus
+            beatae a?</p>
+        </div>
+        <hr>
+        <div class="c-title">
+          <h2>Contact Number</h2>
+          <p>+00 0123456789</p>
+        </div>
+        <hr>
+        <div class="c-title">
+          <h2>Follow us on: </h2>
+          <div id="social-links">
+            <a href="#"><img src="../Images/facebook.png" alt="Facbook"></a>
+            <a href="#"><img src="../Images/instagram.png" alt="Instagram"></a>
+            <a href="#"><img src="../Images/linkedin.png" alt="LinkedIn"></a>
+          </div>
+        </div>
+      </div>
+      <div class="cright">
+        <h1>Message Us</h1>
+        <form action="noaction.php" id="messageus">
+          <input type="text" name="fname" id="fname" placeholder="Enter First Name" required>
+          <input type="text" name="lname" id="lname" placeholder="Enter Last Name" required>
+          <textarea name="message" cols="5" rows="5" id="message" placeholder="Write a message here..." required></textarea>
+          <button id="submit-btn" type="submit">Submit</button>
+        </form>
+      </div>
+    </div>
+    <!-- footer -->
+    <div id="footer-nav">
+      <div id="backtop">
+        <input type="submit" id="backtop-btn" value="Back to Top" href="#home">
+      </div>
+      <div class="foot-box">
+        <div class="fbox" id="box1">
+          <h3>Title</h3>
+          <ul>
+            <li><a href="#">links</a></li>
+            <li><a href="#">links</a></li>
+            <li><a href="#">links</a></li>
+            <li><a href="#">links</a></li>
+          </ul>
+        </div>
+        <div class="fbox" id="box2">
+          <h3>Title</h3>
+          <ul>
+            <li><a href="#">links</a></li>
+            <li><a href="#">links</a></li>
+            <li><a href="#">links</a></li>
+            <li><a href="#">links</a></li>
+          </ul>
+        </div>
+        <div class="fbox" id="box3">
+          <h3>Follow us</h3>
+          <ul>
+            <li><a href="#">instagram</a></li>
+            <li><a href="#">facebook</a></li>
+            <li><a href="#">linkedin</a></li>
+            <li><a href="#">other</a></li>
+          </ul>
+        </div>
+      </div>
+      <div id="other-tools">
+        <p>Tools Coming Soon...</p>
+      </div>
+      <div id="copyright">
+        <p>&copy; Copyright. All Rights reserved to Daily Fitness Club.</p>
+      </div>
+    </div>
+</body>
+</html>
