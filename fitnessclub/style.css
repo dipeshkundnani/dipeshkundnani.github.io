@@ -1,0 +1,394 @@
+  <style>
+  * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Ubuntu", sans-serif;
+  }
+  body {
+  color: white;
+  font-family: "Ubuntu", sans-serif;
+  }
+  #home {
+  /* background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(83, 58, 58, 0.2)),
+    url(../Images/gym-bg.jpg); */
+  background: linear-gradient(rgba(0,0,0,0.7),rgba(83, 58, 58, 0.2)),url(https://github.com/dipeshkundnani/folder/blob/main/assets/images/gym-bg.jpg?raw=true);
+  background-color: black;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+#header {
+  height: 100vh;
+}
+.head {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 15px;
+  /* position: sticky; */
+}
+.logo {
+  margin-left: 15px;
+  margin-top: -8px;
+  text-align: center;
+}
+.logo a{
+  text-decoration: none;
+  color: white;
+}
+.logo img {
+  width: 80px;
+  height: 50px;
+  filter: invert(100%);
+}
+.logo p {
+  font-size: 18px;
+  /* margin: -3px; */
+  color: rgb(226, 226, 226);
+  text-transform: capitalize;
+  font-family: "Ubuntu", sans-serif;
+}
+.navbar {
+  display: flex;
+  margin-top: 8px;
+}
+.navbar li {
+  padding: 5px 15px;
+  list-style: none;
+}
+.navbar li a {
+  color: white;
+  text-decoration: none;
+  font-size: 20px;
+}
+.navbar li a:hover,
+.navbar li a.active {
+  text-decoration: underline;
+  color: rgb(32, 100, 116);
+}
+.userdata {
+  margin-right: 10px;
+  margin-top: 10px;
+}
+.btn {
+  padding: 3px 7px;
+  font-size: 20px;
+  background-color: transparent;
+  margin-right: 5px;
+  border: 2px solid white;
+  border-radius: 10px;
+  font-family: "Ubuntu", sans-serif;
+  font-weight: bold;
+  color: white;
+}
+.btn:hover {
+  /* background-color: grey; */
+  color: rgb(32, 100, 116);
+  border-color: rgb(32, 100, 116);
+  cursor: pointer;
+}
+#main {
+  width: 100%;
+  /* height: 520px; */
+  margin: 10px 0px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.main-container {
+  border: 2px solid white;
+  margin-top: 40px;
+  margin-right: 50px;
+  padding: 10px;
+  width: 25%;
+  border-radius: 10px;
+}
+.main-container h2 {
+  text-align: center;
+  margin: 17px 10px;
+  font-size: 35px;
+}
+.main-container #form {
+  display: flex;
+  flex-direction: column;
+}
+.main-container input {
+  padding: 5px 10px;
+  width: 250px;
+  font-size: 16px;
+  border-radius: 7px;
+  border: none;
+  margin: 10px auto;
+}
+.main-container #register {
+  padding: 5px 25px;
+  margin: 10px auto;
+  border-radius: 7px;
+  font-size: 17px;
+  border: 1px solid white;
+  cursor: pointer;
+}
+#register:hover{
+  background-color: rgb(109, 108, 108);
+}
+.quote {
+  text-shadow: 10px 10px 8px #000;
+}
+#gallery {
+  margin: 10px; 
+  padding: 10px;
+  color: black;
+}
+.gallery-head {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+.gallery-head h1{
+  margin: 15px 5px;
+}
+.gallery-head p{
+  width: 70%;
+  text-align: center;
+  margin-bottom: 10px;
+}
+.img-slides {
+  border-top: 2px solid grey;
+  border-bottom: 2px solid grey;
+  margin: 20px 5px;
+  padding: 20px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.box {
+  border: 2px solid gray;
+  height: 425px;
+  width: 310px;
+  border-radius: 15px;
+  padding: 10px;
+  margin: 30px 0px ;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  box-shadow: 2px 2px 10px 2px rgb(158, 158, 158);
+}
+.box img{
+  height: 180px;
+  width: 190px;
+  border-radius: 50%;
+}
+.box hr{
+  width: 100px;
+  color: grey;
+  border-width: 2px;
+}
+.box p{
+  margin: 0px 20px;
+}
+#aboutus {
+  padding: 20px 10px;
+  margin: 10px;
+  color: black;
+  border-bottom: 2px solid grey;
+}
+#aboutus h1{
+  text-align: center;
+  font-size: 40px;
+  margin-top: -20px;
+  margin-bottom: 20px;
+}
+.about-box {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+.ab-left {
+  width: 40%;
+}
+.about-logo {
+  padding: 20px;
+  margin: 10px auto;
+  margin-top: 10px;
+  text-align: center;
+}
+.about-logo img {
+  width: 230px;
+  height: 210px;
+  border-radius: 50%;
+  margin-bottom: 20px;
+}
+.about-logo p {
+  font-size: 38px;
+  color: black;
+  text-transform: capitalize;
+  font-family: "Ubuntu", sans-serif;
+}
+.ab-right {
+  width: 65%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.ab-right p{
+  padding: 10px 50px;
+}
+#contactus {
+  color: black;
+  /* border-bottom: 2px solid grey; */
+  margin: 30px 10px;
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.cleft {
+  /* border: 2px solid black; */
+  margin: 5px;
+  text-align: center;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.cleft hr{
+  width: 50%;
+  height: 2px;
+  color: rgb(109, 108, 108);
+  margin: 10px auto;
+}
+.c-title {
+  /* border: 2px solid black; */
+  padding: 10px;
+  margin: 5px;
+}
+.c-title h2 {
+  margin: 10px;
+}
+.c-title:nth-child(1) p{
+  padding: 0px 70px; 
+}
+#social-links {
+  /* border: 2px solid black; */
+  margin: 5px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+#social-links img{
+  height: 30px;
+  margin: 0px 20px;
+  width: 30px;
+}
+.cright {
+  /* border: 2px solid black; */
+  margin: 5px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.cright h1{
+  margin: 20px 0px;
+}
+#messageus {
+  /* border: 2px solid black; */
+  margin: 10px;
+  padding: 10px 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+#messageus input,textarea{
+  margin: 10px;
+  padding: 7px 5px;
+  width: 400px;
+  font-size: 18px;
+  border-radius: 5px;
+  border-width: 1px;
+}
+#messageus #submit-btn {
+  margin: 10px;
+  padding: 7px 5px;
+  border-radius: 5px;
+  border-width: 1px;
+  font-size: 18px;
+  cursor: pointer;
+}
+#messageus #submit-btn:hover{
+  background-color: rgb(194, 194, 194);
+}
+#footer-nav {
+  border: 2px solid black;
+  margin: 5px;
+  height: 500px;
+  background-color: rgb(22, 54, 61);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+#backtop-btn{
+  width: 100%;
+  height: 60px;
+  font-size: 16px;
+  background-color: rgb(25, 78, 90);
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+#backtop-btn:hover{
+  background-color: rgb(32, 100, 116);
+}
+.foot-box {
+  /* border: 2px solid black; */
+  padding: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.fbox {
+  /* border: 2px solid black; */
+  margin: 5px;
+  padding: 20px 0px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  width: 25%;
+}
+.fbox h3{
+  margin: 10px;
+  font-size: 22px;
+}
+.fbox li{
+  list-style: none;
+  margin: 3px 0px;
+
+}
+.fbox li a{
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+}
+.fbox li a:hover{
+  color: black;
+}
+#other-tools{
+  height: 120px;
+  /* border: 2px solid black; */
+  text-align: center;
+  line-height: 120px;
+}
+#copyright {
+  margin: 10px;
+  padding: 10px;
+  text-align: center;
+  font-size: 18px;
+}
+
+  </style>
