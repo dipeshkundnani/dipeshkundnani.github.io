@@ -12,7 +12,7 @@
   #home {
   /* background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(83, 58, 58, 0.2)),
     url(../Images/gym-bg.jpg); */
-  background: linear-gradient(rgba(0,0,0,0.7),rgba(83, 58, 58, 0.2)),url(https://github.com/dipeshkundnani/folder/blob/main/assets/images/gym-bg.jpg?raw=true);
+  background: linear-gradient(rgba(0,0,0,0.7),rgba(83, 58, 58, 0.2)),url(gym-bg.jpg);
   background-color: black;
   background-size: cover;
   background-position: center;
