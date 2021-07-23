@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Landing Page Design</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nova+Round&family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+          font-family: 'Roboto', sans-serif;
+        }
+        h1,h2,h3,h4,h5,h5,h6{
+          font-family: 'Nova Round', cursive;
+        }
+        .wrap{
+          background: rgba(0,0,0,.5) url(../Images/house-bg.jpg) no-repeat;
+          background-size: cover;
+          background-position: center;
+          min-height: 100vh;
+          overflow: hidden;
+          background-blend-mode: overlay;
+        }
+        
+        .wave{
+          position: absolute;
+          width: 100%;
+          bottom: -140px;
+          color: #fff;
+          opacity: 1;
+        }
+
+        header{
+          position: fixed;
+          top: 0;
+          left: 0;
+          width: 100%;
+          padding: 30px 80px;
+          background: linear-gradient(to top, transparent,rgba(0,0,0,.4));
+        }
+
+        .logo{
+          color: #fff;
+          font-size: 28px;
+          font-weight: 700;
+          float: left;
+        }
+
+        .menu{
+          float: right;
+          margin-top: 5px;
+        }
+
+        .menu ul li{
+          display: inline-block;
+          margin: 0 25px;
+        }
+
+        .menu ul li a{
+          text-decoration: none;
+          font-size: 20px;
+          color: #fff;
+          text-transform: capitalize;
+          font-weight: 300;
+          letter-spacing: 0.5px;
+        }
+
+        .menu ul li a:hover{
+          text-decoration: underline;
+        }
+
+        .content{
+          margin-top: 200px;
+          margin-left: 150px;
+          color: #fff;
+          max-width: 55%;
+        }
+
+        .content h1{
+          margin: 25px 0px;
+          font-size: 48px;
+        }
+        
+        .content p{
+          width: 85%;
+          margin: 25px 0px;
+          font-size: 20px;
+          font-weight: 300;
+        }
+
+        .content .btn-group{
+          margin-top: 40px;
+        }
+
+        .content .btn-group a{
+          display: inline-block;
+          text-decoration: none;
+          padding: 15px 40px;
+          color: #fff;
+          font-size: 18px;
+          border-radius: 25px;
+        }
+        
+        .content .btn-group a:hover{
+          text-decoration: underline;
+        }
+
+        .content .btn-group #book-btn{
+          text-decoration: none;
+          background-color: #ffc107;
+        }
+
+        .content .btn-group #book-btn:hover{
+          transform: translateY(-5px);
+          transition: all .1s;
+        }
+
+        .our-partners{
+          padding: 0 80px;
+          position: absolute;
+        }
+
+        .our-partners h3{
+          font-size: 28px;
+          margin-bottom: 15px;
+        }
+
+        .our-partners hr{
+          border: none;
+          height: 5px;
+          width: 120px;
+          background-color: #ffc107;
+        }
+
+        .partners{
+          margin: 50px 0;
+          width: 100%;
+          line-height: 100px;
+          display: flex;
+          align-items: center;
+          justify-content: space-around;
+        } 
+
+        .partners img{
+          width: 14%;
+          padding: 15px;
+          margin-right: 25px;
+          border: 1px solid #cacaca;
+          border-radius: 20px;
+          box-shadow: 0 5px 0 #cacaca;
+        }
+    </style>
+  </head>
+  <body>
+      <div class="wrap">
+        <header>
+          <div class="logo">LOGO</div>
+          <div class="menu">
+            <ul>
+              <li><a href="#">home</a></li>
+              <li><a href="#">about</a></li>
+              <li><a href="#">partners</a></li>
+              <li><a href="#">faq</a></li>
+              <li><a href="#">blogs</a></li>
+            </ul>
+          </div>
+        </header>
+        
+        <div class="content">
+          <h1>Your Dream House is ready for booking.</h1>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque rerum porro quaerat nulla officia quos.</p>
+          <div class="btn-group">
+            <a href="#" id="book-btn">Book Now</a>
+            <a href="#">Learn more</a>
+          </div>
+        </div>
+
+        <div class="wave">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#fff" fill-opacity="1" d="M0,32L60,58.7C120,85,240,139,360,133.3C480,128,600,64,720,58.7C840,53,960,107,1080,117.3C1200,128,1320,96,1380,80L1440,64L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"></path></svg>
+        </div>
+
+      </div>
+      <div class="our-partners">
+        <h3>Our Partners</h3>
+        <hr>
+        <div class="partners">
+          <img src="../Images/goibibo.jpg" alt="">
+          <img src="../Images/airbnb.png" alt="">
+          <img src="../Images/makemytrip.png" alt="">
+          <img src="../Images/oyo.png" alt="">
+          <img src="../Images/goibibo.jpg" alt="">
+        </div>
+      </div>
+  </body>
+</html>
