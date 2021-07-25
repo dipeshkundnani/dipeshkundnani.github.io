@@ -159,6 +159,138 @@
           border-radius: 20px;
           box-shadow: 0 5px 0 #cacaca;
         }
+       .copyright {
+         text-align: center;
+         padding: 10px 0px;
+         color: #000;
+         z-index: 200;
+       }
+      
+      /* tablet responsive */
+      @media (max-width: 768px) {
+        .wrap {
+          min-height: 500px;
+        }
+
+        .wave {
+          top: 420px;
+        }
+
+        header {
+          padding: 20px 40px;
+        }
+
+        .menu ul li {
+          margin: 0 20px;
+        }
+
+        .content {
+          margin: 175px 0 0 70px;
+          max-width: 70%;
+        }
+
+        .content h1 {
+          margin: 20px 0px;
+          font-size: 34px;
+        }
+
+        .content p {
+          width: 90%;
+          font-size: 16px;
+        }
+
+        .content .btn-group {
+          margin-top: 25px;
+        }
+
+        .content .btn-group a {
+          padding: 10px 30px;
+          font-size: 18px;
+        }
+
+        #our-partners {
+          padding: 0px 20px;
+        }
+      }
+      /* mobile responsive */
+      @media (max-width: 360px) {
+        header {
+          padding: 16px 24px;
+        }
+
+        .wave {
+          top: 440px;
+        }
+        .logo {
+          font-size: 26px;
+          font-weight: 500;
+        }
+
+        #menu {
+          display: block;
+          color: #fff;
+          float: right;
+          font-size: 26px;
+          cursor: pointer;
+        }
+
+        #cancel {
+          display: none;
+          color: #fff;
+          font-size: 26px;
+          float: right;
+          cursor: pointer;
+        }
+
+        .menu {
+          display: none;
+        }
+
+        .content {
+          margin: 130px 0 0 24px;
+          max-width: 80%;
+        }
+
+        .content h1 {
+          font-size: 30px;
+        }
+
+        .content p {
+          width: 100%;
+          font-size: 14px;
+        }
+
+        .content .btn-group a {
+          padding: 12px 18px;
+          font-size: 14px;
+          border-radius: 20px;
+        }
+        .content .btn-group {
+          margin-top: 25px;
+        }
+
+        .our-partners {
+          margin: 0px 20px;
+        }
+
+        #our-partners h3 {
+          font-size: 24px;
+        }
+
+        #our-partners hr {
+          width: 95px;
+        }
+
+        .partners {
+          margin: 30px 0;
+          flex-direction: column;
+        }
+
+        .partners img {
+          width: 80%;
+          margin: 15px 0px;
+        }
+      }
     </style>
   </head>
   <body>
@@ -200,6 +332,9 @@
           <img src="images/oyo.png" alt="">
           <img src="images/goibibo.jpg" alt="">
         </div>
+        <div class="copyright">
+        <p>&copy; All right reserved to Dipesh Kundnani.</p>
+      </div>
       </div>
   </body>
 </html>
