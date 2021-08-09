@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Food Delivery Website</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" media="screen and (max-width: 1170px)" href="mobile.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;700&family=PT+Serif:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <nav id="navbar">
+      <div id="logo">
+        <img src="./Images/food-logo.jpg" alt="company logo" />
+      </div>
+      <ul>
+        <li class="item"><a href="#home">home</a></li>
+        <li class="item"><a href="#service">services</a></li>
+        <li class="item"><a href="#client">clients</a></li>
+        <li class="item"><a href="#contact">contact</a></li>
+      </ul>
+    </nav>
+    <section id="home">
+      <h1 class="h-primary">Welcome to Maxim Restaurant</h1>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit itaque
+        nisi ullam.
+      </p>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+      <button class="btn">Order Now</button>
+    </section>
+
+    <section id="service">
+      <h1 class="h-primary center">Our Services</h1>
+      <div id="services">
+        <div class="box">
+          <img src="./Images/food-vehicle-icon.png" alt="" />
+          <h2 class="h-secondary center">Food Ordering</h2>
+          <p class="center">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam
+            voluptatem aperiam corrupti magni tempore dignissimos similique
+            quas, cupiditate sequi? Libero corrupti doloremque. Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi quis, ad magnam dolore optio ea.
+          </p>
+        </div>
+        <div class="box">
+          <img src="./Images/food-icon2.png" alt="" />
+          <h2 class="h-secondary center">Food Catering</h2>
+          <p class="center">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam
+            voluptatem aperiam corrupti magni tempore dignissimos similique
+            quas, cupiditate sequi? Libero corrupti doloremque. Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi quis, ad magnam dolore optio ea.
+          </p>
+        </div>
+        <div class="box">
+          <img src="./Images/food-icon3.png" alt="" />
+          <h2 class="h-secondary center">Bulk Ordering</h2>
+          <p class="center">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam
+            voluptatem aperiam corrupti magni tempore dignissimos similique
+            quas, cupiditate sequi? Libero corrupti doloremque. Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi quis, ad magnam dolore optio ea.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="client">
+      <h1 class="h-primary center">Our Clients</h1>
+      <div id="clients">
+        <div class="client-item">
+          <img src="./Images/microsoft-logo.jpg" alt="Client name" />
+        </div>
+        <div class="client-item">
+          <img src="./Images/apple-logo.png" alt="Client name" />
+        </div>
+        <div class="client-item">
+          <img src="./Images/google-logo.png" alt="Client name" />
+        </div>
+        <div class="client-item">
+          <img src="./Images/hp-logo.png" alt="Client name" />
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <h1 class="h-primary center">Contact Us</h1>
+      <div class="contact-cont">
+        <div class="contact-img"></div>
+        <div id="contact-box">
+          <form action="">
+            <div class="form-group">
+              <label for="name">Name: </label>
+              <input type="text" id="name" placeholder="enter your name" />
+            </div>
+            <div class="form-group">
+              <label for="email">Email: </label>
+              <input
+                type="email"
+                id="email"
+                placeholder="enter your email address"
+              />
+            </div>
+            <div class="form-group">
+              <label for="number">Name: </label>
+              <input
+                type="number"
+                id="number"
+                placeholder="enter your mobile number"
+              />
+            </div>
+            <div class="form-group">
+              <label for="msg">Message: </label>
+              <textarea name="message" id="msg" cols="40" rows="10" placeholder="Type your message here.."></textarea>
+            </div>
+            <div id="submit">
+                <button id="submit-btn">Submit</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="copy center">
+        <p>Copyright &copy; Maxim Restaurant pvt ltd. All rights reserved.</p>
+      </div>
+    </footer>
+  </body>
+</html>
