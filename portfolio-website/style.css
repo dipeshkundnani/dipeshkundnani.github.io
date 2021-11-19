@@ -5,10 +5,9 @@
 }
 
 :root{
-    /* --primary-color: rgb(255, 117, 5); */
-    --bg-color: rgb(255, 252, 203);
-    --primary-color: rgb(255, 63, 5);
-    --secondary-color: teal;
+    --bg-color: #EDF3FD;
+    --primary-color: #295792;
+    --secondary-color: #141B41;
     --tertiary-color: rgba(245, 245, 245, 0.384);
 }
 body{
